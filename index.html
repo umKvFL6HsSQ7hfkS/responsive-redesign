@@ -1,0 +1,157 @@
+<html>
+    <head>
+    
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="script.js">
+    <link rel="stylesheet" href="style.css">
+
+    
+    </head>
+        <body style="color: black">
+        <div class="topnav" id="myTopnav">
+            <a class="portfolio-brand" href="#">2022 UIUX Portfolio</a>
+            <a href="#home" class="active">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    
+        <script>
+            function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+        }
+        </script>
+    
+        <h1> Responsive Redesign: <a class="website" href="https://www.providenceriflowershop.com/">Redesigning Frey & Florist Greenhouses</a></h1> 
+        <!-- background section -->
+        <div class="background-box">
+            <h2>Background</h2>
+            <p> Frey & Florist Greenhouses is a Providence-based flower 
+                shop selling through both brick-and-mortar and e-commerce channels.
+                The <a class="website" href="https://www.providenceriflowershop.com/">website</a>,  however, has a number of usability issues.
+            Here are three frames of the homepage annotated with what I find 
+            to be the main issues their current <a class="website" href="https://www.providenceriflowershop.com/">website</a>: </p>
+
+            <h3> Top of website homepage </h3>
+                <img class="original" src="original/homepage-original.jpg" alt="Original Frey Florist &
+                Greenhouses homepage. There are annotations throughout the page criqituing the design"> 
+            <h3> Product offerings listed on the homepage </h3>   
+                <img class="original" src="original/product-original.jpeg" alt="Original Frey Florist &
+                Greenhouses offerings on homepage. There are annotations throughout the page criqituing the design">
+            <h3> Website footer </h3>       
+                <img class="original" src="original/footer-origina.jpg" alt="Original Frey Florist &
+                Greenhouses website footer. There are annotations throughout the page criqituing the design">
+            <h4>Overall problems</h4> 
+            <a class="issues"> Going through the website's homepage above, we see 4 main issues: </a>
+            <ol class="custom-counter">
+                <li> No company name in the header which leads to poor memorability and branding issues
+                </li> <br>
+                <li> Overwhelming navigation bar with odd or overly specific categories and overwhelming sub-categories, 
+                    all of which doe not align with flexbility and efficiency of use and thus negatatively impact usability
+                </li> <br>
+                <li> Unintuitive listing of product offerings (with limited-time and common products hidden on the page)
+                    in an unatural and illogical manner that do not match between system and the real world</li><br>
+
+                <li> Cluttered footer with redundant or irrelevant information and links that do not present in an
+                    aesthetic and minimalist design
+                </li>
+            </ol> 
+            <h4>Accessibility issues</h4> 
+                <p class="accesibility">As detected using WebAIM WAVE, there are over 20 contrast errors on this homepage alone. 
+                    I would agree that these contrast areas are very obvious. Personally, I had a bit of a challenging time 
+                    reading the options in the navigation bar, and I had to adjust my brightness in order to view 
+                    it properly. Additionally, WebAIM WAVE flagged the high volumne of alt tags; when using Inspect
+                    Element on the homepage, I noticed that a number of the alt tags have poor descriptions for the images
+                    they're describing. For example, the alt tag for the "Custom Arrangements" only says "Custom Flower Design"
+                    with no mention that this is a product offering. 
+                 </p> 
+        </div>
+        <!-- visual resdesign section -->
+        <div class="visual-redesign">
+            <h2>Visual Redesign</h2>
+            <h4>Lofi Designs</h4> 
+            <p class="lofi-explanation"> Before I developed my hifi designs or the actual redesigned website, I started with lofi designs designed using Balsamiq for 
+                three types of screen views: desktop, tablet, and mobile. The yellow "sticky" notes indicate how my lofi design
+                address the issues I found in Frey's original website design. </br> <br>
+                <a> Note: </a> &nbsp; </br> The black dots between the frames for each device 
+                represent the scrolling aspect; I chose to cut out some of the original wireframe since the images would be too long and would
+                not provide any additional insight as they would show repeated elements. </p>
+            
+            <h3> Desktop </h3>
+            <img class="lofi-original" src="lofi/desktop-lofi.png" alt="Top half of desktop lofi annotated with sticky notes">
+            <img class="black-circle" src="circle.png" alt="Black circle">
+            <img class="black-circle" src="circle.png" alt="Black circle">
+            <img class="black-circle" src="circle.png" alt="Black circle">
+            <img class="lofi-original" src="lofi/desktop-lofi-cont.png" alt="Bottom half of desktop lofi annotated with sticky notes">
+            
+            <h3> Tablet </h3>
+            <img class="lofi-original" src="lofi/tablet-lofi.png" alt="Top half of tablet lofi annotated with sticky notes">
+            <img class="black-circle" src="circle.png" alt="Black circle">
+            <img class="black-circle" src="circle.png" alt="Black circle">
+            <img class="black-circle" src="circle.png" alt="Black circle">
+            <img class="lofi-original" src="lofi/tablet-lofi-cont.png" alt="Bottom half of tablet lofi annotated with sticky notes">
+            
+            <h3> iPhone </h3>
+            <img class="lofi-original" src="lofi/phone-lofi.png" alt="Top half of tablet lofi annotated with sticky notes">
+            <img class="black-circle" src="circle.png" alt="Black circle">
+            <img class="black-circle" src="circle.png" alt="Black circle">
+            <img class="black-circle" src="circle.png" alt="Black circle">
+            <img class="lofi-original" src="lofi/phone-lofi-cont.png" alt="Bottom half of tablet lofi annotated with sticky notes">
+
+            <p> In summary, these lofi wireframes address the three main issues I had listed previously surrounding
+                usability and memorability of the website. </p>
+            
+            <h4>Visual Design Style Guide</h4> 
+            <p> Before starting my hifi designs and development, I created a visual design style guide in Figma
+                that displayed the main colors, typography, and reusable components used throughout my hifi designs. 
+            </p>
+            <img class="lofi-original" src="vsg.png" alt="Top half of tablet lofi annotated with sticky notes">
+            
+            <h4>Hifi Designs</h4> 
+
+            <a class="note"> Note:</a> The black dots between the frames for each device represent the scrolling aspect; I 
+            did this for the hifi wireframes as well to cut to save space as the elements not shown are redundant (and reflected in the 
+            screenshots I did include). </p>
+
+            <h3> Desktop </h3>
+            <img class="hifi-original" src="hifi/desktop-hifi.png" alt="Top half of desktop hifi annotated with sticky notes">
+            <img class="black-circle" src="circle.png" alt="Black circle">
+            <img class="black-circle" src="circle.png" alt="Black circle">
+            <img class="black-circle" src="circle.png" alt="Black circle">
+            <img class="hifi-original" src="hifi/desktop-hifi-cont.png" alt="Bottom half of desktop hifi annotated with sticky notes">
+
+            <h3> Tablet </h3>
+            <img class="hifi-original" src="hifi/tablet-hifi.png" alt="Top half of tablet hifi annotated with sticky notes">
+            <img class="black-circle" src="circle.png" alt="Black circle">
+            <img class="black-circle" src="circle.png" alt="Black circle">
+            <img class="black-circle" src="circle.png" alt="Black circle">
+            <img class="hifi-original" src="hifi/tablet-hifi-cont.png" alt="Bottom half of tablet hifi annotated with sticky notes">
+
+            <h3> iPhone </h3>
+            <img class="hifi-original" src="hifi/iphone-hifi.png" alt="Top half of tablet hifi annotated with sticky notes">
+            <img class="black-circle" src="circle.png" alt="Black circle">
+            <img class="black-circle" src="circle.png" alt="Black circle">
+            <img class="black-circle" src="circle.png" alt="Black circle">
+            <img class="hifi-original" src="hifi/iphone-hifi-cont.png" alt="Bottom half of tablet hifi annotated with sticky notes">
+        </div>
+
+        <!-- Conclusion box -->
+        <div class="conclusion-box">
+            <h2>Responsive Redesign & Takeaways</h2>
+            <p> Please find my responsive redesigned website <a class="website" href="https://umkvfl6hssq7hfks.github.io/responsive-redesign/responsive-redesign/"> here</a>. 
+                I did ulimately have some issues trying to implement the hamburger menu for the smaller screen sizes; this is something I plan to explore further
+                when I revise this webpage later on in the semester and have more web dev experience. 
+            </p>
+        </div>
+
+    
+    
+    </body>
+    </html>
